@@ -87,7 +87,7 @@ class DeathMarchEstimator:
         angles += angles[:1]
 
         # プロット作成
-        fig, ax = plt.subplots(figsize=(8, 8), subplot_kw=dict(polar=True))
+        fig, ax = plt.subplots(figsize=(10, 8), subplot_kw=dict(polar=True)) # サイズを少し大きく調整
 
         # ターゲット（診断対象）
         ax.plot(angles, values_target, linewidth=2, linestyle='solid', label='Target Project', color='#1f77b4')
@@ -104,12 +104,18 @@ class DeathMarchEstimator:
         plt.yticks([2, 4, 6, 8, 10], ["2", "4", "6", "8", "CRITICAL"], color="grey", size=9)
         plt.ylim(0, 10)
 
-        # タイトルとレジェンド
+        # タイトル
         plt.title(f"Structural Risk Analysis\n(Similarity to {fail_name}: {diagnosis_result['similarity_percent']}%)", size=14, y=1.08)
-        plt.legend(loc='upper right', bbox_to_anchor=(0.1, 0.1))
         
+        # 凡例の設定（修正箇所）
+        # bbox_to_anchorでグラフ外の右上に固定配置し、切れないように調整
+        plt.legend(loc='upper right', bbox_to_anchor=(1.3, 1.1))
+        
+        # レイアウト調整（凡例が見えるように余白を確保）
+        plt.tight_layout()
+
         output_file = "risk_radar_chart.png"
-        plt.savefig(output_file)
+        plt.savefig(output_file, bbox_inches='tight') # 保存時にも余白を調整
         print(f"[*] Risk Chart Saved: {output_file}")
 
 # ---------------------------------------------------------
