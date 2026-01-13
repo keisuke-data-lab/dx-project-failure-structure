@@ -35,6 +35,18 @@ DXプロジェクトの失敗の多くは、技術的な難易度ではなく**�
 **Important Note:**
 以下の変数はすべて**「リスク指数（Risk Index）」**です。スコアが高いほど「構造的リスクが高い（状態が悪い）」ことを示します。能力値（Capability）ではありません。
 
+### Reference Dataset: "The Portfolio of Failure" (学習データ定義)
+本ツールが参照する「失敗の類型」は以下の通りです。
+
+| Case Name | Category (類型) | Root Cause (死因・教訓) |
+| :--- | :--- | :--- |
+| **Mizuho_2002** | Complexity Overload<br>(複雑性の暴走) | **意思決定不全 (Decision Latency):**<br>複数ベンダーの利害調整に失敗し、仕様が統合されないままリリースを強行。 |
+| **7pay_Incident** | Governance Fail<br>(ガバナンス欠如) | **経営の無理解 (Client Immaturity):**<br>セキュリティ（2段階認証）の欠如を経営層が認識せず、サービス開始直後に即死撤退。 |
+| **COCOA_App** | Supply Chain Fragility<br>(多重下請け) | **責任所在の蒸発 (Supply Chain Depth):**<br>再委託が繰り返され、テスト工程の責任者が不在化。バグが数ヶ月放置された。 |
+| **JCB_Vendor** | Death March<br>(ベンダー崩壊) | **要件の未決 (Req Immaturity):**<br>要件が決まらないまま開発に着手し、人海戦術（増員）で解決しようとして現場が崩壊。 |
+| **SOFTIC 009**<br>(タグ事件) | Scope Creep<br>(要件肥大化) | **法的紛争 (Legal Dispute):**<br>ユーザーが追加要望を繰り返し、要件を確定させなかったことによる債務不履行争い。 |
+| **SOFTIC 021**<br>(九州屋事件) | **User Competence Fail**<br>(ユーザー過失) | **GIGO (Garbage In, Garbage Out):**<br>ベンダーに過失はなかったが、ユーザーの提供情報が誤っていたためシステムが不適合。 |
+
 | Variable (Code) | **Display Name (表示名)** | Why Critical? |
 | :--- | :--- | :--- |
 | `req_ambiguity` | **Requirement Immaturity**<br>(要件定義の未熟度) | 「走りながら決める」は、法的紛争（SOFTIC 009）の入り口です。スコア高＝要件がカオス。 |
