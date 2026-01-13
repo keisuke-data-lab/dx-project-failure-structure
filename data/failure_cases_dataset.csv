@@ -2,7 +2,7 @@ case_name,req_ambiguity,multi_vendor_layer,decision_speed,user_incompetence,est_
 Mizuho_2002,9,10,10,6,2000,Complexity Overload
 7pay_Incident,5,4,2,9,30,Governance Fail (Instant Death)
 COCOA_App,8,9,8,8,4,Supply Chain Fragmentation
-JCB_VendorCollapse,9,7,8,5,500,Req Ambiguity & Vendor Collapse
-SOFTIC_009_TagCase,9,3,9,7,1,Legal Dispute (Scope Creep)
+JCB_Vendor,9,7,8,5,500,Req Ambiguity & Vendor Collapse
+SOFTIC_009,9,3,9,7,1,Legal Dispute (Scope Creep)
 SOFTIC_021_Kyushuuya,10,1,3,10,1,User Competence Failure (GIGO)
 Ideal_Project,1,1,1,1,0,Baseline (Success Model)
