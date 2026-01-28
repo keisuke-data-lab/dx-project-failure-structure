@@ -1,6 +1,7 @@
 # DX Project Failure Structure Diagnostic
 ## (Project Omen) 過去の炎上・判例に基づく意思決定ストッパー
 
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://dx-project-failure-structure-nl4ewadvnnug5haxtsfa2u.streamlit.app/)
 ![Python](https://img.shields.io/badge/Python-3.9-blue.svg) ![Type](https://img.shields.io/badge/Type-Governance_Tool-red.svg)
 
 > **⚠️ 前提宣言 (Scope & Disclaimer)**
@@ -24,7 +25,7 @@ DXプロジェクトの失敗の多くは、技術的な難易度ではなく**�
 
 ### Expected Outcome (導入効果)
 * **Typical Outcome:** Early rejection or scope reset before 30–40% budget burn.
-    （典型的な成果：予算の30-40%が溶ける前に、プロジェクトを早期凍結またはスコープ再設定する）
+  （典型的な成果：予算の30-40%が溶ける前に、プロジェクトを早期凍結またはスコープ再設定する）
 
 ---
 
@@ -55,9 +56,6 @@ DXプロジェクトの失敗の多くは、技術的な難易度ではなく**�
 | **SOFTIC 009**<br>(タグ事件) | Scope Creep<br>(要件肥大化) | **法的紛争 (Legal Dispute):**<br>ユーザーが追加要望を繰り返し、要件を確定させなかったことによる債務不履行争い。 |
 | **SOFTIC 021**<br>(九州屋事件) | **User Competence Fail**<br>(ユーザー過失) | **GIGO (Garbage In, Garbage Out):**<br>ベンダーに過失はなかったが、ユーザーの提供情報が誤っていたためシステムが不適合。 |
 
-### The "Kyushuuya" Paradox (SOFTIC 021)
-特筆すべきは「九州屋事件」です。ベンダーに過失はなく、バグもありませんでしたが、**「ユーザー（発注者）の業務理解不足」**によりプロジェクトは失敗しました。本ツールは、この「ユーザー起因のリスク」を検知できる点が特徴です。
-
 ### Tech Note: Heuristic Approach
 > The distance-to-similarity conversion is intentionally heuristic. The purpose is relative structural comparison, not statistical prediction accuracy.
 > 
@@ -86,20 +84,24 @@ DXプロジェクトの失敗の多くは、技術的な難易度ではなく**�
 
 ---
 
-## 5. Tech Stack
+## 5. Output Sample & Tech Stack
+
+**診断結果の可視化（レーダーチャート）**
+特定されたリスク構造（赤点線）と、対象プロジェクト（青実線）の形状比較。
+![Risk Radar Chart](https://placehold.co/600x400?text=Risk+Radar+Chart+Placeholder)
+*(※アプリを実行して表示されるチャートのイメージです)*
 
 * **Algorithm:** Case-Based Reasoning (k-NN approach)
 * **Language:** Python 3.9
 * **Libraries:** Pandas, NumPy, Matplotlib
 
-## 6. Output Sample
-**診断結果の可視化（レーダーチャート）**
-特定されたリスク構造（赤点線）と、対象プロジェクト（青実線）の形状比較。
-![Risk Radar Chart](risk_radar_chart.png)
-
 ---
 
-> **Note to Readers:**
-> もし、このREADMEや出力結果を見て「不快」あるいは「居心地の悪さ」を感じたならば、
-> **その不快感は多くの場合、予算超過が表面化する数年前に、現場だけが感じていた「予兆」そのものです。**
-> (In many failed projects, this discomfort appears years before the budget overrun becomes visible.)
+## 6. How to Run Locally
+
+```bash
+# 1. Install dependencies
+pip install -r requirements.txt
+
+# 2. Run application
+streamlit run app.py
