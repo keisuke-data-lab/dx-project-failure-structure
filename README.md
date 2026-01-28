@@ -1,6 +1,17 @@
 # DX Project Budget Simulator
 **「仕様変更」と「手戻り」によるプロジェクト赤字を可視化する経営シミュレーター**
 
+## 📉 Business Value / Concept
+**「離職は、コストではなく『負債』である。」**
+
+本ツールは、組織内における**「離職の連鎖（Turnover Contagion）」**を確率モデルで再現し、人的資本投資のROIを算出する**人事戦略シミュレーター**です。
+
+従来の「離職率」という静的な指標ではなく、欠員が残存社員（特にハイパフォーマー）に与える負荷と、そこから発生するドミノ倒し的な組織崩壊リスクを可視化します。
+
+**【主な活用シーン】**
+* **人的資本経営のROI証明:** 採用強化やリテンション施策への投資が、将来の「数億円規模の損失」を回避するために合理的であることを財務視点で証明する。
+* **組織アラート:** 離職率がどの閾値を超えると、組織が自律回復不能な「崩壊フェーズ」に入るかを予見する。
+
 [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://dx-project-failure-structure-nl4ewadvnnug5haxtsfa2u.streamlit.app/)
 > **👆 Click to Run App**: ブラウザ上で「なぜ予算超過が起きるのか？」を金額ベースで体験できます。
 
