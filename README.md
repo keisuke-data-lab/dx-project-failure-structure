@@ -1,5 +1,10 @@
 # DX Project Budget Simulator
 **「仕様変更」と「手戻り」によるプロジェクト赤字を可視化する経営シミュレーター**
+## 📸 Dashboard Demo
+**▼ 実際のシミュレーション画面 (UI)**
+
+![Dashboard Overview](./images/demo_overview.png)
+
 
 ## 📉 Business Value / Concept
 **「離職は、コストではなく『負債』である。」**
