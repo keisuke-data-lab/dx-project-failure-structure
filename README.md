@@ -49,6 +49,13 @@
 
 ---
 
+## 📊 Related Tool
+**定性的な「プロジェクト構造リスク」を診断したい場合はこちら**
+> **[⚖️ DX Project Risk Diagnostic](https://github.com/keisuke-data-lab/dx-risk-diagnostic)**
+> 過去の失敗事例（Mizuho, COCOA等）との類似性を判定するガバナンス診断ツール
+
+---
+
 ## 🛠 Tech Stack
 - **Language**: Python 3.12
 - **Frontend**: Streamlit
