@@ -3,8 +3,7 @@
 ## 📸 Dashboard Demo
 **▼ 実際のシミュレーション画面 (UI)**
 
-![Dashboard Overview](./images/demo_overview.png)
-
+![Dashboard Demo](./images/demo_simulation.gif)
 
 ## 📉 Business Value / Concept
 **「離職は、コストではなく『負債』である。」**
