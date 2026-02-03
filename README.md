@@ -85,7 +85,7 @@ graph TD
 
 ```bash
 # 1. Clone the repository
-git clone [https://github.com/keisuke-data-lab/dx-project-failure-structure.git](https://github.com/keisuke-data-lab/dx-project-failure-structure.git)
+git clone https://github.com/keisuke-data-lab/dx-project-failure-structure.git
 
 # 2. Install dependencies
 pip install -r requirements.txt
@@ -96,7 +96,4 @@ streamlit run app.py
 
 <br>
 
-<div align="center">
-  Author: <b>Keisuke Nakamura</b><br>
-  Project Finance / System Dynamics / Risk Modeling
-</div>
+<div align="center"> Author: <b>Keisuke Nakamura</b><br> Project Finance / System Dynamics / Risk Modeling </div>
